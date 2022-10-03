@@ -36,6 +36,10 @@
     justify-content: space-between;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .width-30{
     flex-basis: calc(100% / 3 - 1rem);
 }
@@ -63,6 +67,10 @@
     margin: 0 auto;
 }
 
+.column-container{
+    padding-bottom: 1.5rem;
+}
+
 .padding-thin{
     padding: 3rem 0;
 }
@@ -78,11 +86,24 @@ ul{
 
 /* Regole per i bottoni */
 button{
-    padding: .5rem .7rem;
+    padding: .8rem .7rem;
     border: none;
     background-color: var(--blue);
     color: var(--white);
-    font-size: .7rem;
+}
+
+.btn-small{
+    padding: .5rem .7rem;
+}
+
+.btn-large{
+    width: 100%;
+}
+
+.btn-white{
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--grey);
 }
 
 /* Regole per formattazione testo */
@@ -94,6 +115,10 @@ h1{
 h2{
     font-size: 2rem;
     padding-bottom: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
 }
 
 h3, h4{
@@ -212,13 +237,8 @@ header .jumbo{
     padding-left: .5rem;
 }
 
-.col-body button{
-    width: 100%;
-}
-
-.col-body button,
-.col-body .line-break{
-    margin: 2rem 0;
+.col-body .col-cta{
+    padding: 2rem 0;
 }
 
 .line-break{
@@ -229,4 +249,8 @@ header .jumbo{
 
 .col-icon-container .icon-check i{
     color: var(--blue);
+}
+
+.col-subsection{
+    padding-top: 2rem;
 }
