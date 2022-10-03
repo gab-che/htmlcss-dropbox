@@ -12,6 +12,7 @@
     --lightblue: #b4d0e7;
     --black: #000000;
     --white: #ffffff;
+    --grey: #5f6363;
 }
 
 /* Classi per flex */
@@ -19,12 +20,20 @@
     display: flex;
 }
 
-.col-gap{
+.col-gap-1{
     column-gap: 1rem;
+}
+
+.col-gap-2{
+    column-gap: 2rem;
 }
 
 .align-center{
     align-items: center;
+}
+
+.space-between{
+    justify-content: space-between;
 }
 
 .width-30{
@@ -87,9 +96,29 @@ h1{
     font-weight: 800;
 }
 
+h2{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+h3{
+    padding-bottom: 1rem;
+}
+
 p{
-    padding-bottom: 1.5rem;
     line-height: 1.5rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.grey-text{
+    color: var(--grey);
 }
 
 /* Regole per le immagini */
@@ -100,6 +129,7 @@ img{
 /* Regole specifiche per il menu */
 menu{
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
@@ -121,6 +151,10 @@ header .jumbo{
     padding-top: 6rem;
 }
 
+.jumbo p{
+    padding-bottom: 1.5rem;
+}
+
 .jumbo p:nth-of-type(2){
     padding-top: 1.5rem;
 }
@@ -136,4 +170,30 @@ header .jumbo{
 .jumbo-description .description-image{
     position: relative;
     top: 54px;
+}
+
+/* Regole specifiche per le sezioni centrali */
+#h2-under-jumbo{
+    padding: 4rem 0;
+}
+
+.radio-buttons{
+    padding-bottom: 2rem;
+}
+
+.col{
+    border: 1px solid var(--grey)
+}
+
+.col-header{
+    border-bottom: 1px solid var(--grey);
+    padding: .5rem;
+}
+
+.col-body{
+    padding: 2rem 1.5rem;
+}
+
+.col-title{
+    padding-bottom: 3rem;
 }
