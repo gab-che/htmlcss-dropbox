@@ -45,12 +45,12 @@
 
 /* Classi container */
 .big-container{
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .small-container{
-    width: 920px;
+    max-width: 920px;
     margin: 0 auto;
 }
 
@@ -85,7 +85,6 @@ button{
 h1{
     font-size: 3rem;
     font-weight: 800;
-    padding-bottom: 2rem;
 }
 
 p{
@@ -99,6 +98,14 @@ img{
 }
 
 /* Regole specifiche per il menu */
+menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+}
+
 .menu-container{
     padding: 1rem;
     justify-content: space-between;
@@ -111,6 +118,7 @@ menu a{
 /* Regole specifiche per sezione jumbo in header */
 header .jumbo{
     background-color: var(--lightblue);
+    padding-top: 6rem;
 }
 
 .jumbo p:nth-of-type(2){
@@ -119,4 +127,13 @@ header .jumbo{
 
 .jumbo i{
     font-size: 2rem;
+}
+
+.jumbo-description .description-text{
+    align-self: center;
+}
+
+.jumbo-description .description-image{
+    position: relative;
+    top: 54px;
 }
