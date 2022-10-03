@@ -71,14 +71,9 @@
     padding: 5rem 0;
 }
 
-/* Regole per liste e link*/
+/* Regole per liste */
 ul{
     list-style: none;
-}
-
-a{
-    padding: .5rem;
-    text-decoration: none;
 }
 
 /* Regole per i bottoni */
@@ -101,7 +96,7 @@ h2{
     padding-bottom: 2rem;
 }
 
-h3{
+h3, h4{
     padding-bottom: 1rem;
 }
 
@@ -143,6 +138,8 @@ menu{
 
 menu a{
     color: var(--black);
+    padding: .5rem;
+    text-decoration: none;
 }
 
 /* Regole specifiche per sezione jumbo in header */
@@ -181,6 +178,7 @@ header .jumbo{
     padding-bottom: 2rem;
 }
 
+/* Colonne */
 .col{
     border: 1px solid var(--grey)
 }
@@ -212,4 +210,23 @@ header .jumbo{
 
 .col-icon-container li p{
     padding-left: .5rem;
+}
+
+.col-body button{
+    width: 100%;
+}
+
+.col-body button,
+.col-body .line-break{
+    margin: 2rem 0;
+}
+
+.line-break{
+    height: 1px;
+    width: 20%;
+    background-color: var(--grey);
+}
+
+.col-icon-container .icon-check i{
+    color: var(--blue);
 }
