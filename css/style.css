@@ -197,3 +197,19 @@ header .jumbo{
 .col-title{
     padding-bottom: 3rem;
 }
+
+.col-icon-container li{
+    padding-left: 1rem;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.col-icon-container li i{
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.col-icon-container li p{
+    padding-left: .5rem;
+}
