@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* CSS Properties */
@@ -13,7 +14,7 @@
     --white: #ffffff;
 }
 
-/* Regole generiche per flex */
+/* Classi per flex */
 .flex{
     display: flex;
 }
@@ -26,10 +27,39 @@
     align-items: center;
 }
 
-/* Regole container */
-.menu-container{
-    padding: 1rem;
-    justify-content: space-between;
+.width-30{
+    flex-basis: 30%;
+}
+
+.width-70{
+    flex-basis: 70%;
+}
+
+.width-40{
+    flex-basis: 40%;
+}
+
+.width-60{
+    flex-basis: 60%;
+}
+
+/* Classi container */
+.big-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.small-container{
+    width: 920px;
+    margin: 0 auto;
+}
+
+.padding-thin{
+    padding: 3rem 0;
+}
+
+.padding-thick{
+    padding: 5rem 0;
 }
 
 /* Regole per liste e link*/
@@ -44,14 +74,49 @@ a{
 
 /* Regole per i bottoni */
 button{
-    padding: .5rem;
+    padding: .5rem .7rem;
     border: none;
     background-color: var(--blue);
     color: var(--white);
     font-size: .7rem;
 }
 
+/* Regole per formattazione testo */
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 2rem;
+}
+
+p{
+    padding-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+/* Regole per le immagini */
+img{
+    width: 100%;
+}
+
 /* Regole specifiche per il menu */
+.menu-container{
+    padding: 1rem;
+    justify-content: space-between;
+}
+
 menu a{
     color: var(--black);
+}
+
+/* Regole specifiche per sezione jumbo in header */
+header .jumbo{
+    background-color: var(--lightblue);
+}
+
+.jumbo p:nth-of-type(2){
+    padding-top: 1.5rem;
+}
+
+.jumbo i{
+    font-size: 2rem;
 }
