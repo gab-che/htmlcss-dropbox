@@ -13,6 +13,7 @@
     --black: #000000;
     --white: #ffffff;
     --grey: #5f6363;
+    --bordeaux: #61082b;
 }
 
 /* Classi per flex */
@@ -79,6 +80,10 @@
     padding: 5rem 0;
 }
 
+.bg-blue{
+    background-color: var(--lightblue);
+}
+
 /* Regole per liste */
 ul{
     list-style: none;
@@ -141,6 +146,10 @@ p{
     color: var(--grey);
 }
 
+.red-text{
+    color: var(--bordeaux);
+}
+
 /* Regole per le immagini */
 img{
     width: 100%;
@@ -169,7 +178,6 @@ menu a{
 
 /* Regole specifiche per sezione jumbo in header */
 header .jumbo{
-    background-color: var(--lightblue);
     padding-top: 6rem;
     position: relative;
 }
