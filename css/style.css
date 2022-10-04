@@ -110,6 +110,7 @@ button{
 
 .btn-large{
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .btn-white{
@@ -193,8 +194,8 @@ header .jumbo{
     padding-bottom: 1.5rem;
 }
 
-.jumbo p:nth-of-type(2){
-    padding-top: 1.5rem;
+.jumbo button{
+    margin-bottom: 2rem;
 }
 
 .jumbo i{
@@ -253,22 +254,15 @@ header .jumbo{
     padding-left: .5rem;
 }
 
-.col-body .col-cta{
-    padding: 2rem 0;
-}
-
 .line-break{
     height: 1px;
     width: 20%;
     background-color: var(--grey);
+    margin: 2rem 0;
 }
 
 .col-icon-container .icon-check i{
     color: var(--blue);
-}
-
-.col-subsection{
-    padding-top: 2rem;
 }
 
 /* Card */
@@ -286,6 +280,13 @@ header .jumbo{
 
 .box-container .box:nth-of-type(2){
     background-color: var(--beige);
+    padding: 2rem;
+}
+
+.box-container .box:nth-of-type(2) p{
+    font-size: .8rem;
+    padding-bottom: 2rem;
+    line-height: initial;
 }
 
 .small-box{
