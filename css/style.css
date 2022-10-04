@@ -340,3 +340,18 @@ header .jumbo{
 .aspect-box img{
     filter: invert(1);
 }
+
+/* Toggle */
+.faq{
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+    padding: 2rem 0;
+    position: relative;
+}
+
+.faq i{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
