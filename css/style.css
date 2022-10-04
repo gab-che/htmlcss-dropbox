@@ -41,7 +41,7 @@
 }
 
 .width-30{
-    flex-basis: calc(100% / 3 - 1rem);
+    flex-basis: calc(100% / 3);
 }
 
 .width-70{
@@ -171,6 +171,7 @@ menu a{
 header .jumbo{
     background-color: var(--lightblue);
     padding-top: 6rem;
+    position: relative;
 }
 
 .jumbo p{
@@ -253,4 +254,13 @@ header .jumbo{
 
 .col-subsection{
     padding-top: 2rem;
+}
+
+/* Card */
+.card-container{
+    row-gap: 2rem;
+}
+
+.card-image{
+    width: 90%;
 }
