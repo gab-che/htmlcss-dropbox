@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,6 +24,8 @@
     --darkred: #d5001f;
     --green: #a2d39b;
     --yellow: #ffd830;
+    --standard-size: 2rem;
+    --smaller-size: 1rem;
 }
 
 /* Classi per flex */
@@ -29,11 +34,11 @@
 }
 
 .col-gap-1{
-    column-gap: 1rem;
+    column-gap: var(--smaller-size);
 }
 
 .col-gap-2{
-    column-gap: 2rem;
+    column-gap: var(--standard-size);
 }
 
 .align-center{
@@ -102,7 +107,7 @@ ul{
 
 menu a,
 footer a{
-    padding: .5rem;
+    padding: calc(var(--smaller-size) / 2);
     text-decoration: none;
 }
 
@@ -120,7 +125,7 @@ button{
 
 .btn-large{
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: var(--standard-size);
 }
 
 .btn-white{
@@ -136,8 +141,8 @@ h1{
 }
 
 h2{
-    font-size: 2rem;
-    padding-bottom: 2rem;
+    font-size: var(--standard-size);
+    padding-bottom: var(--standard-size);
 }
 
 h3{
@@ -145,7 +150,7 @@ h3{
 }
 
 h3, h4{
-    padding-bottom: 1rem;
+    padding-bottom: var(--smaller-size);
 }
 
 p{
@@ -188,14 +193,14 @@ menu{
 }
 
 .menu-container{
-    padding: 1rem;
+    padding: var(--smaller-size);
     justify-content: space-between;
 }
 
 
 /* Regole specifiche per sezione jumbo in header */
 header .jumbo{
-    padding-top: 6rem;
+    padding-top: calc(var(--standard-size) * 3);
 }
 
 .jumbo .jumbo-description{
@@ -208,30 +213,30 @@ header .jumbo{
 }
 
 .jumbo button{
-    margin-bottom: 2rem;
+    margin-bottom: var(--standard-size);
 }
 
 .jumbo i{
-    font-size: 2rem;
+    font-size: var(--standard-size);
 }
 
 /* Regole specifiche per le sezioni centrali */
 #h2-under-jumbo{
-    padding: 4rem 0;
+    padding: calc(var(--standard-size) * 2) 0;
 }
 
 .radio-buttons{
-    padding-bottom: 2rem;
+    padding-bottom: var(--standard-size);
 }
 
 .radio-buttons input{
-    display:none;
+    display: none;
 }
 
 .radio-buttons .radio-circle{
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
+    width: var(--smaller-size);
+    height: var(--smaller-size);
     border: 1px solid var(--grey);
     border-radius: 50%;
     vertical-align: text-top;
@@ -248,11 +253,11 @@ header .jumbo{
 
 .col-header{
     border-bottom: 1px solid var(--grey);
-    padding: .5rem;
+    padding: calc(var(--smaller-size) / 2);
 }
 
 .col-body{
-    padding: 2rem 1.5rem;
+    padding: var(--standard-size) 1.5rem;
 }
 
 .col-title{
@@ -260,8 +265,8 @@ header .jumbo{
 }
 
 .col-icon-container li{
-    padding-left: 1rem;
-    margin: 1rem 0;
+    padding-left: var(--smaller-size);
+    margin: var(--smaller-size) 0;
     position: relative;
 }
 
@@ -272,14 +277,14 @@ header .jumbo{
 }
 
 .col-icon-container li p{
-    padding-left: .5rem;
+    padding-left: calc(var(--smaller-size) / 2);
 }
 
 .line-break{
     height: 1px;
     width: 20%;
     background-color: var(--grey);
-    margin: 2rem 0;
+    margin: var(--standard-size) 0;
 }
 
 .col-icon-container .icon-check i{
@@ -288,7 +293,7 @@ header .jumbo{
 
 /* Card */
 .card-container{
-    row-gap: 2rem;
+    row-gap: var(--standard-size);
 }
 
 .card-image{
@@ -301,13 +306,13 @@ header .jumbo{
 
 .box-container .box:nth-of-type(2){
     background-color: var(--beige);
-    padding: 2rem;
+    padding: var(--standard-size);
     overflow: auto;
 }
 
 .box-container .box:nth-of-type(2) p{
     font-size: .8rem;
-    padding-bottom: 2rem;
+    padding-bottom: var(--standard-size);
     line-height: initial;
 }
 
@@ -315,39 +320,6 @@ header .jumbo{
     width: 50%;
     height: 50%;
     position: relative;
-}
-
-.small-box.green{
-    background-color: var(--green);
-    border: 1rem solid #d1e9cd;
-}
-
-.small-box.bordeaux{
-    background-color: var(--bordeaux);
-}
-
-.small-box.lightblue{
-    background-color: var(--lightblue);
-}
-
-.small-box.lightred{
-    background-color: var(--lightred);
-}
-
-.small-box.darkred{
-    background-color: var(--darkred);
-}
-
-.small-box.beaublue{
-    background-color: var(--beaublue);
-}
-
-.small-box.darkblue{
-    background-color: var(--darkblue);
-}
-
-.small-box.yellow{
-    background-color: var(--yellow);
 }
 
 .aspect-box{
@@ -367,7 +339,7 @@ header .jumbo{
 .faq{
     border-top: 1px solid var(--grey);
     border-bottom: 1px solid var(--grey);
-    padding: 2rem 0;
+    padding: var(--standard-size) 0;
     position: relative;
 }
 
@@ -380,7 +352,7 @@ header .jumbo{
 
 .faq-dropdown{
     display: none;
-    padding-top: 1rem;
+    padding-top: var(--smaller-size);
 }
 
 .faq:hover .faq-dropdown{
@@ -403,7 +375,7 @@ footer ul{
 }
 
 footer li{
-    margin-bottom: 1rem;
+    margin-bottom: var(--smaller-size);
 }
 
 footer a{
