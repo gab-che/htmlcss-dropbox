@@ -85,7 +85,7 @@ body{
 }
 
 .column-container{
-    padding-bottom: 1.5rem;
+    padding-bottom: var(--standard-size);
 }
 
 .padding-thin{
@@ -318,12 +318,15 @@ header .jumbo{
 
 .small-box{
     width: 50%;
-    height: 50%;
+    aspect-ratio: 1/1;
     position: relative;
 }
 
-.aspect-box{
-    /* aspect-ratio: auto; */
+.small-box:hover{
+    border: var(--smaller-size) solid #fff6;
+}
+
+.logo-box{
     width: 60%;
     position: absolute;
     top: 50%;
@@ -331,7 +334,7 @@ header .jumbo{
     transform: translate(-50%, -50%);
 }
 
-.aspect-box img{
+.logo-box img{
     filter: invert(1);
 }
 
