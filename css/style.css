@@ -224,6 +224,23 @@ header .jumbo{
     padding-bottom: 2rem;
 }
 
+.radio-buttons input{
+    display:none;
+}
+
+.radio-buttons .radio-circle{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+    vertical-align: text-top;
+}
+
+.radio-buttons input:checked + .radio-circle{
+    border: 5px solid var(--blue);
+}
+
 /* Colonne */
 .col{
     border: 1px solid var(--grey)
