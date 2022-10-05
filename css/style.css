@@ -195,7 +195,11 @@ menu a{
 /* Regole specifiche per sezione jumbo in header */
 header .jumbo{
     padding-top: 6rem;
+}
+
+.jumbo .jumbo-description{
     position: relative;
+    top: 50px;
 }
 
 .jumbo p{
@@ -208,15 +212,6 @@ header .jumbo{
 
 .jumbo i{
     font-size: 2rem;
-}
-
-.jumbo-description .description-text{
-    align-self: center;
-}
-
-.jumbo-description .description-image{
-    position: relative;
-    top: 54px;
 }
 
 /* Regole specifiche per le sezioni centrali */
