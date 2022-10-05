@@ -208,6 +208,17 @@ header .jumbo{
     top: 50px;
 }
 
+.jumbo-description .description-text i{
+    transform: translateY(-10px);
+    transition: all .5s;
+}
+
+.jumbo-description .description-text i:hover{
+    transform: translateY(0);
+    color: var(--blue);
+    transform: scale(1.5);
+}
+
 .jumbo p{
     padding-bottom: 1.5rem;
 }
