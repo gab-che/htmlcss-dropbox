@@ -197,6 +197,29 @@ menu{
     justify-content: space-between;
 }
 
+.menu-container ul > li{
+    position: relative;
+}
+
+.menu-container a:hover,
+.hidden-list{
+    background-color: var(--beige);
+}
+
+.hidden-list{
+    display: none;
+    width: 100%;
+}
+
+.hidden-list li{
+    padding: var(--smaller-size) 0;
+}
+
+.menu-container a:hover + .hidden-list{
+    display: block;
+    position: absolute;
+    top: 25px;
+}
 
 /* Regole specifiche per sezione jumbo in header */
 header .jumbo{
