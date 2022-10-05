@@ -370,9 +370,10 @@ header .jumbo{
     display: block;
 }
 
-.faq:hover i{
+.faq:hover i:first-child{
     opacity: 0;
 }
+
 
 /* Footer */
 footer{
