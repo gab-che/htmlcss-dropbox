@@ -361,6 +361,19 @@ header .jumbo{
     transform: translateY(-50%);
 }
 
+.faq-dropdown{
+    display: none;
+    padding-top: 1rem;
+}
+
+.faq:hover .faq-dropdown{
+    display: block;
+}
+
+.faq:hover i{
+    opacity: 0;
+}
+
 /* Footer */
 footer{
     background-color: var(--black);
