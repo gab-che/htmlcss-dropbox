@@ -209,6 +209,8 @@ menu{
 .hidden-list{
     display: none;
     width: 100%;
+    position: absolute;
+    top: 25px;
 }
 
 .hidden-list li{
@@ -217,8 +219,6 @@ menu{
 
 .menu-container a:hover + .hidden-list{
     display: block;
-    position: absolute;
-    top: 25px;
 }
 
 /* Regole specifiche per sezione jumbo in header */
